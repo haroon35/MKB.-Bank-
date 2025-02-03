@@ -7,11 +7,9 @@ import { IoMenu } from "react-icons/io5";
 export default function Header() {
   return (
     <div className="bg-black flex">
-      <div className="text-white w-11/12 m-auto flex justify-between items-center">
+      <div className="text-white w-11/12 m-auto flex justify-between items-center py-3">
         <div>
-          <h1 className="text-2xl font-bold py-4 flex items-center">
-            <NavMenu title="MKT. Bank" />
-          </h1>
+          <img src="./mk.webp" alt="" className="h-12 " />
         </div>
         <div className="hidden lg:flex items-center gap-2 font-semi bold ">
           <NavMenu navItemName="why us" Icon={IoIosArrowDown} />
@@ -27,7 +25,7 @@ export default function Header() {
           <button className="px-4 py-1 border-2 border-white bg-white text-black hidden lg:block">
             Login
           </button>
-          <HiOutlineSearchCircle className=" text-white w-10 h-10 scale-x-[-1]" />
+          <HiOutlineSearchCircle className=" text-white w-11 h-11 scale-x-[-1] stroke-[1]" />
           <IoMenu className="lg:hidden w-8 h-8" />
         </div>
       </div>
